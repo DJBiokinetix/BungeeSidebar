@@ -1,6 +1,7 @@
 package org.spigot.sidebar;
 
 import net.md_5.bungee.api.CommandSender;
+import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.plugin.Command;
 
@@ -15,7 +16,7 @@ public class Com extends Command {
 		if (sender instanceof ProxiedPlayer) {
 			((ProxiedPlayer) sender).sendMessage("§c[§aSideBar§c] §2" + msg); //$NON-NLS-1$
 		} else {
-			System.out.println("[SideBar] " + msg); //$NON-NLS-1$
+			ProxyServer.getInstance().getLogger().info("[SideBar] " + msg); //$NON-NLS-1$
 		}
 	}
 
