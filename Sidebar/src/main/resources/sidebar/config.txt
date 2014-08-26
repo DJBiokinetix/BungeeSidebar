@@ -1,0 +1,51 @@
+delay=60
+random=true
+[excludeservers]
+fun
+auth
+[/excludeservers]
+
+[msg]name=pb,exclude=true,title=§6§l§nPaintBall event
+§2KDE:
+§3/warp fun
+ 
+§2KDY:
+§3Admin oznámí 
+  
+§2ODMÌNY:
+§3Admin oznámí
+[/msg]
+
+[msg]title=§c§l§nBude reset mapy survivalu!,name=reset
+§aKDY:
+§3Brzy
+ 
+§aDÙVODY:
+§3Podvody
+§3Pøenášení
+§3Prohazování
+  
+§aCO ZÙSTANE:
+§3Jen spawn
+[/msg]
+
+[msg]title=§aNezapomeò sledovat web
+ 
+[/msg]
+
+[msg]title=§cRedstone škola
+§aKDY:
+§3viz fórum
+[/msg]
+
+[msg]title=§b§l§nReklama
+ 
+[/msg]
+
+[msg]name=pbv8,title=§6§l§nPaintball event,exclude=true
+§bKDY:
+§dDNES VE 20:00
+ 
+§bKDE:
+§d/warp fun
+[/msg]
