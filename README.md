@@ -47,3 +47,11 @@ Example message<br />
 `line 2`<br />
 `line 3`<br />
 `[/msg]`<br />
+
+
+#### Todo:<br />
+- Variables:
+  - Player variables
+  - Server variables
+  - Custom variables
+- Per server config
