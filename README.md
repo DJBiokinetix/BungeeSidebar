@@ -7,6 +7,25 @@ Please see config file file for settings example.
 
 ====================================================
 
+Commands:
+
+/sb freeze		- freeze the current sidebar
+
+/sb unfreeze 	- undo freeze
+
+/sb reload    - safe config reload (unloading it directly can cause unpredictable results including clients crash)
+
+/sb frozen		- tells you if the current sidebar is frozen or not
+
+
+==============================================================
+
+Permissions:
+
+sb.use		- For all sb commands
+
+================================================================
+
 config.txt:
 
 
