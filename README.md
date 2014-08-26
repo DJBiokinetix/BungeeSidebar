@@ -29,13 +29,13 @@ auth
 
 // Valid tags:
 
-//  name=<name>     - Sets the name for the sidebar, allowing you to set this sidebar using /sb set <name>.
+//  name=&lt;name&gt;     - Sets the name for the sidebar, allowing you to set this sidebar using /sb set <name>.
 
 //                    If you do not provide this information it will be set to random, starting with @_
 
-//  title=<title>   - Sets the title of sidebar. Note the 32 characters limit
+//  title=&lt;title&gt;   - Sets the title of sidebar. Note the 32 characters limit
 
-//  excluded=<true> - If set to true, the message will never be shown, unless you use /sb set
+//  excluded=&lt;true&gt; - If set to true, the message will never be shown, unless you use /sb set
 
 
 // The text no enclosed in any of the tags will be ignored. (comments)
