@@ -1,51 +1,35 @@
 delay=60
-random=true
+random=false
 [excludeservers]
 fun
-auth
 [/excludeservers]
 
-[msg]name=pb,exclude=true,title=§6§l§nPaintBall event
-§2KDE:
-§3/warp fun
+[msg]name=example1,title=&6&l&nBungee Sidebar
+&1&lSidebar
+&1&lexample
  
-§2KDY:
-§3Admin oznámí 
+&2&lVersion:
+&b&n1.1
   
-§2ODMÌNY:
-§3Admin oznámí
+&apage: &c1/3
 [/msg]
 
-[msg]title=§c§l§nBude reset mapy survivalu!,name=reset
-§aKDY:
-§3Brzy
+[msg]title=&6&l&nBungee Sidebar,name=example2
+&a&nTodo:
+&3 - Variables
+&3 - Locales
  
-§aDÙVODY:
-§3Podvody
-§3Pøenášení
-§3Prohazování
+&a&nCommands:
+&3 - /sb
   
-§aCO ZÙSTANE:
-§3Jen spawn
+&a&nPermission:
+&3 - sb.use
+   
+&apage: &c2/3
 [/msg]
 
-[msg]title=§aNezapomeò sledovat web
- 
-[/msg]
-
-[msg]title=§cRedstone škola
-§aKDY:
-§3viz fórum
-[/msg]
-
-[msg]title=§b§l§nReklama
- 
-[/msg]
-
-[msg]name=pbv8,title=§6§l§nPaintball event,exclude=true
-§bKDY:
-§dDNES VE 20:00
- 
-§bKDE:
-§d/warp fun
+[msg]title=     &6&l&nBungee Sidebar&r                ,name=example3
+ - empty line -
+ - empty line - 
+ - empty line -  
 [/msg]
