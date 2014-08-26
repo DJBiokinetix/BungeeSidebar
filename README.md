@@ -10,11 +10,11 @@ Please see config file file for settings example.
 #### Commands:
 
 
-/sb freeze		- freeze the current sidebar<br />
-/sb unfreeze 	- undo freeze<br />
-/sb reload    - safe config reload (unloading it directly can cause unpredictable results including clients crash)<br />
-/sb frozen		- tells you if the current sidebar is frozen or not<br />
-
+`/sb freeze`		- freeze the current sidebar<br />
+`/sb unfreeze` 	- undo freeze<br />
+`/sb reload`    - safe config reload (unloading it directly can cause unpredictable results including clients crash)<br />
+`/sb frozen`		- tells you if the current sidebar is frozen or not<br />
+`/sb set <name>` - set the current sidebar if there is one with such name
 
 ==============================================================
 
