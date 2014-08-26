@@ -1,30 +1,35 @@
 delay=60
-random=true
+random=false
 [excludeservers]
 fun
-auth
 [/excludeservers]
 
-[msg]name=pb,exclude=true,title=§6§l§nevent
-§2Where:
-§3/warp fun
+[msg]name=example1,title=&6&l&nBungee Sidebar
+&1&lSidebar
+&1&lexample
  
-§2When:
-§3Today
+&2&lVersion:
+&b&n1.1
+  
+&apage: &c1/3
 [/msg]
 
-[msg]title=§c§l§nanother example!,name=example
-§aWhen:
-§3Soon
+[msg]title=&6&l&nBungee Sidebar,name=example2
+&a&nTodo:
+&3 - Variables
+&3 - Locales
  
-§a...:
-§3....
+&a&nCommands:
+&3 - /sb
+  
+&a&nPermission:
+&3 - sb.use
+   
+&apage: &c2/3
 [/msg]
 
-[msg]name=pbv8,title=§6§l§nAnother event
-§bWhen:
-§Today 8pm
- 
-§bWhere:
-§d/warp fun
+[msg]title=     &6&l&nBungee Sidebar&r                ,name=example3
+ - empty line -
+ - empty line - 
+ - empty line -  
 [/msg]
