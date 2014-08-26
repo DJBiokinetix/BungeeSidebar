@@ -83,6 +83,7 @@ public class config {
 									} else {
 										title = titler;
 									}
+									title=title.replace("&", "§");
 								}
 							}
 						}
@@ -101,6 +102,7 @@ public class config {
 					inmsg = false;
 					continue;
 				} else if (inmsg) {
+					s=s.replace("&", "§");
 					if (s.length() > 15) {
 						texts.add(s.substring(0, 15));
 					} else {
