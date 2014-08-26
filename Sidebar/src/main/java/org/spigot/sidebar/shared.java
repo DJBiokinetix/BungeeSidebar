@@ -13,17 +13,17 @@ import net.md_5.bungee.protocol.packet.ScoreboardScore;
 
 public class shared {
 	private static shared instance = null;
-	public HashMap<String, objective> objectives;
-	public String activeobjective;
-	public int activeobjectiveint;
-	public HashMap<ProxiedPlayer, String> rec;
-	public HashMap<Integer, String> mapper;
-	public boolean random = false;
-	public int delay = 5000;
-	public List<String> exserver;
-	public boolean blocked = false;
-	public Runnable run;
-	public Object o;
+	protected HashMap<String, objective> objectives;
+	protected String activeobjective;
+	protected int activeobjectiveint;
+	protected HashMap<ProxiedPlayer, String> rec;
+	protected HashMap<Integer, String> mapper;
+	protected boolean random = false;
+	protected int delay = 5000;
+	protected List<String> exserver;
+	protected boolean blocked = false;
+	protected Runnable run;
+	protected Object o;
 
 	
 	//Prepare the variable and make it double
@@ -32,7 +32,7 @@ public class shared {
 	}
 
 	//To protect the code from deprecation
-	public synchronized static void addscoreboard(String name, objective objective, boolean excluded) {
+	protected synchronized static void addscoreboard(String name, objective objective, boolean excluded) {
 		if (!scoreboardexists(name)) {
 			objective.name = name;
 			if (!excluded) {
@@ -44,14 +44,14 @@ public class shared {
 	}
 
 	//To unite all constants within our function
-	public synchronized static void removescoreboard(String name) {
+	protected synchronized static void removescoreboard(String name) {
 		if (scoreboardexists(name)) {
 			shared.getInstance().objectives.remove(name);
 		}
 	}
 
 	//To denounce the evil of blur and cast
-	public synchronized static void setactivescoreboard(String name) {
+	protected synchronized static void setactivescoreboard(String name) {
 		if (!shared.getInstance().activeobjective.equals(name) && scoreboardexists(name)) {
 			senditems(name);
 			shared.getInstance().activeobjective = name;
@@ -69,17 +69,17 @@ public class shared {
 		shared.getInstance().rec=new HashMap<ProxiedPlayer, String>();
 	}
 
-	public synchronized static void remove(ProxiedPlayer player, boolean nicz) {
+	protected synchronized static void remove(ProxiedPlayer player, boolean nicz) {
 		String oldobj = shared.getInstance().rec.get(player);
 		player.unsafe().sendPacket(new ScoreboardObjective(oldobj, oldobj, oldobj, (byte) 1));
 	}
 	
-	public synchronized static void remove(ProxiedPlayer player) {
+	protected synchronized static void remove(ProxiedPlayer player) {
 		remove(player,false);
 		shared.getInstance().rec.remove(player);
 	}
 
-	public synchronized static void senditems(String name) {
+	protected synchronized static void senditems(String name) {
 		if (scoreboardexists(name)) {
 			Collection<ProxiedPlayer> players = ProxyServer.getInstance().getPlayers();
 			for (ProxiedPlayer player : players) {
@@ -91,7 +91,7 @@ public class shared {
 		}
 	}
 
-	public synchronized static void updateplayer(ProxiedPlayer player, String objname, boolean forced) {
+	protected synchronized static void updateplayer(ProxiedPlayer player, String objname, boolean forced) {
 		if (!(shared.getInstance().exserver.contains(player.getServer().getInfo().getName()))) {
 			if ((!(shared.getInstance().activeobjective.equals(objname))) || forced) {
 				String oldobj = shared.getInstance().rec.get(player);
@@ -107,19 +107,19 @@ public class shared {
 		}
 	}
 
-	public static void updateplayer(ProxiedPlayer player) {
+	protected static void updateplayer(ProxiedPlayer player) {
 		updateplayer(player, shared.getInstance().activeobjective, false);
 	}
 
-	public static void updateplayer(ProxiedPlayer player, boolean forced) {
+	protected static void updateplayer(ProxiedPlayer player, boolean forced) {
 		updateplayer(player, shared.getInstance().activeobjective, forced);
 	}
 
-	public static void updateplayer(ProxiedPlayer player, String obj) {
+	protected static void updateplayer(ProxiedPlayer player, String obj) {
 		updateplayer(player, obj, false);
 	}
 
-	public static boolean scoreboardexists(String name) {
+	protected static boolean scoreboardexists(String name) {
 		if (shared.getInstance().objectives.containsKey(name)) {
 			return true;
 		} else {
