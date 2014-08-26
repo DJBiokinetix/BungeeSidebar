@@ -29,10 +29,10 @@ sb.use		- For all sb commands
 delay=60    //Delay in seconds between one sidebar message and another<br />
 random=true //If the order should be randomized<br />
 
-[excludeservers] //Insert names of servers on which you would not want to see the sidebars<br />
-fun<br />
+`[excludeservers]` //Insert names of servers on which you would not want to see the sidebars<br />
+`fun<br />
 auth<br />
-[/excludeservers]<br />
+[/excludeservers]<br />`
 
 //Example message<br />
 // Valid tags:<br />
